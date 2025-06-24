@@ -1,0 +1,276 @@
+/* fuentes */
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* colores */
+
+:root {
+    --primario: #e8505b;
+    --secundario: #455a64;
+    --negro: #000;
+    --blanco: #FFFFFF;
+    --grisClaro: #eceeef;
+}
+
+/* selector global */
+* {
+    font-family: 'roboto';
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-global {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conenedor-page {
+    width: 89%;
+}
+
+
+/* zona menu */
+.contenedor-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 27vh;
+
+    img {
+        width: 25%;
+    }
+
+    .botones-nav {
+
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: var(--negro);
+        }
+
+        .registro {
+            background: var(--primario);
+            color: var(--blanco);
+            width: 250px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+    }
+}
+
+/* zona datos de pedido */
+.contenedor-datospedido {
+
+    height: 88vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .contenedor-left-dates {
+
+        width: 48%;
+        background-color: var(--primario);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .cuadro-dates {
+            width: 80%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 20%;
+
+            h1 {
+                text-align: center;
+                font-size: 36px;
+                color: var(--blanco);
+            }
+
+            .caja-form {
+                display: flex;
+                flex-direction: column;
+                color: var(--blanco);
+                gap: 10px;
+
+                input {
+                    padding: 15px;
+                    font-size: 16px;
+                }
+
+                .boton-buscar {
+                    margin-top: 10px;
+                    background: var(--secundario);
+                    color: var(--blanco);
+                    width: 100%;
+                    height: 45px;
+                    border: none;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    text-decoration: none;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+    }
+
+    .contenedor-right-img {
+
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+
+        img {
+            width: 95%;
+        }
+
+    }
+}
+
+/* zona de funcionalidades de la App */
+.contenedor-funcionalidades {
+
+    .separador {
+        height: 10vh;
+    }
+
+    .ola {
+        margin-bottom: -1rem;
+    }
+
+
+    .cuadro-de-pasos {
+
+        background-color: var(--primario);
+
+        .subtitulo-funcionalidad {
+            text-align: center;
+            color: var(--blanco);
+            height: 15vh;
+
+
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+        }
+
+        .contenedor-de-pasos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 5%;
+
+            img {
+                width: 27%;
+            }
+        }
+    }
+
+}
+
+/* zona de testimonios */
+.contenedor-testimonios {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 20px;
+    color: var(--blanco);
+
+    .cont-subtitulo-testimonios{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        font-size: 36px;
+        font-weight: bold;
+        color: var(--negro);
+    }
+
+    .icono-perfil{
+        width: 100px;
+        border-radius: 100%;
+    }
+    .nombre-persona{
+        font-weight: bold;
+        padding-bottom: 0.5rem ;
+    }
+
+    .testimonio-peque {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: var(--secundario);
+        border-radius: 10px;
+    }
+
+    .testimonio-largo {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: var(--secundario);
+        border-radius: 10px;
+    }
+
+    .cont-superior-testimonio {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .cont-nombreystars {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .caja-superior {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .caja-inferior {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
