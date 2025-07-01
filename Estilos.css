@@ -210,7 +210,7 @@ body {
     font-size: 20px;
     color: var(--blanco);
 
-    .cont-subtitulo-testimonios{
+    .cont-subtitulo-testimonios {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -220,13 +220,14 @@ body {
         color: var(--negro);
     }
 
-    .icono-perfil{
+    .icono-perfil {
         width: 100px;
         border-radius: 100%;
     }
-    .nombre-persona{
+
+    .nombre-persona {
         font-weight: bold;
-        padding-bottom: 0.5rem ;
+        padding-bottom: 0.5rem;
     }
 
     .testimonio-peque {
@@ -273,4 +274,351 @@ body {
         flex-direction: row;
         gap: 1rem;
     }
+
+    .separador {
+        height: 40px;
+    }
+}
+
+/* zona de restaurantes preferidos */
+.contenedor-restaurantes {
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grisClaro);
+
+    .cont-subtitulo-restaurantes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        font-size: 36px;
+        font-weight: bold;
+        color: var(--secundario);
+    }
+
+    .cont-tarjetas-restaurantes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .tarjeta-favorito {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--blanco);
+        width: 48%;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 2.6rem -0.8rem var(--secundario);
+
+        .cont-elementos-tarjeta {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 85%;
+
+            .imagen-restaurant img {
+                width: 120px;
+            }
+
+            .contenido-restaurant {
+
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                .cont-nombreystars-restaurant {
+                    h2 {
+                        padding-top: 0.3rem;
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: var(--primario);
+                    }
+                }
+
+                p {
+                    color: var(--secundario);
+                    font-size: 16px;
+                    line-height: 1.7;
+                }
+            }
+        }
+
+    }
+
+    .separador {
+        height: 40px;
+    }
+}
+
+.conenedor-page-restaurant {
+
+    width: 100%;
+    background-color: var(--grisClaro);
+    display: flex;
+    justify-content: center;
+
+    .conenedor-page {
+        width: 89%;
+    }
+
+}
+
+/* zona de información de trabajo de repartidor */
+.contenedor-info-de-trabajo {
+
+    display: flex;
+    flex-direction: column;
+
+    .cont-subtitulo-trabajo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        font-size: 36px;
+        font-weight: bold;
+        color: var(--secundario);
+    }
+
+    .zona-columnas-info {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .cont-imagen-repartidor {
+
+            width: 50%;
+
+            img {
+                width: 95%;
+            }
+        }
+
+        .cont-contenido-trabajo {
+
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: end;
+            gap: 1.5rem;
+
+            .parrafos-iniciales {
+                width: 95%;
+                color: var(--secundario);
+                font-size: 20px;
+                line-height: 1.6;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .cont-boton-masinfo {
+
+                width: 95%;
+                display: flex;
+
+                .boton-masinfo {
+                    background: var(--primario);
+                    color: var(--blanco);
+                    width: 220px;
+                    height: 45px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+    }
+
+    .separador {
+        height: 40px;
+    }
+}
+
+/* zona de descarga de la App */
+.contenedor-zona-de-descarga {
+    .contenedor-columnas-de-info {
+
+        display: flex;
+        flex-direction: row;
+
+        .cont-imagen-app {
+
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                width: 48%;
+            }
+        }
+
+        .cont-elementos-de-descarga {
+
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+
+            h2 {
+                font-size: 32px;
+                margin-bottom: -1rem;
+                color: var(--secundario);
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            .botones-de-descarga {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 1rem;
+
+                img {
+                    width: 47%;
+                }
+            }
+        }
+
+    }
+
+    .separador {
+        height: 40px;
+    }
+}
+
+.conenedor-page-descarga-app {
+
+    width: 100%;
+    background-color: var(--grisClaro);
+    display: flex;
+    justify-content: center;
+
+    .conenedor-page {
+        width: 89%;
+    }
+
+}
+
+/* zona de todos los links y pie de pagina */
+.contenedor-links-piedepagina {
+
+    display: flex;
+    flex-direction: column;
+
+    .contenedor-zona-de-links {
+
+        display: flex;
+        flex-direction: row;
+        color: var(--blanco);
+        background-color: var(--secundario);
+        gap: 1rem;
+
+        .cont-1 {
+
+            width: 34%;
+
+            h2 {
+                font-size: 32px;
+                padding-bottom: 1rem;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 1.7;
+            }
+        }
+
+        .cont-2 {
+
+            width: 34%;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            h2 {
+                font-size: 32px;
+                padding-bottom: 1rem;
+            }
+
+            a {
+                font-size: 20px;
+                color: var(--blanco);
+                text-decoration: none;
+            }
+        }
+
+        .cont-3 {
+
+            width: 34%;
+
+            h2 {
+                font-size: 32px;
+                padding-bottom: 1rem;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 1.7;
+            }
+        }
+    }
+
+    .conenedor-page-links {
+
+    width: 100%;
+    background-color: var(--secundario);
+    display: flex;
+    justify-content: center;
+
+    .conenedor-page {
+        width: 89%;
+    }
+
+}
+
+    .separador {
+        height: 75px;
+        background-color: var(--secundario);
+    }
+
+    .piedepagina {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        background-color: var(--primario);
+        font-size: 20px;
+        color: var(--blanco);
+    }
+
+    .conenedor-page-piedepagina {
+
+    width: 100%;
+    background-color: var(--primario);
+    display: flex;
+    justify-content: center;
+
+    .conenedor-page {
+        width: 89%;
+    }
+
+}
 }
